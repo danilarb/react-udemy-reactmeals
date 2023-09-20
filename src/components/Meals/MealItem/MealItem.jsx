@@ -1,9 +1,9 @@
 import {useContext} from "react";
 import classes from "./MealItem.module.css";
-import {MealItemForm} from "./MealItemForm";
+import MealItemForm from "./MealItemForm";
 import CartContext from "../../../store/cart-context";
 
-export function MealItem(props) {
+export default function MealItem(props) {
     const cartContext = useContext(CartContext)
 
     const price = `$${props.price.toFixed(2)}`;
